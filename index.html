@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="input-container">
+                <input type="text" class="city-name" placeholder="Search City">
+                <button class="search" onclick="searchCity()">
+                    <span class="material-symbols-outlined">
+                    search
+                    </span>
+                </button>
+            </div>
+            <div class="location">--</div>
+            <div class="weather">
+                <div class="weather-icon"></div>
+                <div class="temp-container">
+                    <div class="temp">--&deg;C</div>
+                    <div class="weather-type">--</div>
+                </div>
+            </div>
+            <div class="more-info">
+                <div class="wind-container">
+                    <div class="iweather-icon"><img src="icon/wind-icon.svg" alt="wind icon"/></div>
+                    <div class="wind-speed"><strong>Wind</strong><br>--</div>
+                </div>
+                <div class="temp-info-container">
+                    <div class="iweather-icon"><img src="icon/temperature-icon.svg" alt="temperature icon"/></div>
+                    <div class="more-temp">
+                        <div class="min-temp-container">
+                            <strong>Min</strong>:<span class="min-temp">--&deg;C</span>
+                        </div>
+                        <div class="max-temp-container">
+                            <strong>Max</strong>:<span class="max-temp">--&deg;C</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="humidity-container">
+                    <div class="iweather-icon"><img src="icon/humidity-icon.svg" alt="humidity icon"/></div>
+                    <div class="humidity"><strong>Humidity</strong><br>--%</div>
+                </div>
+            </div>
+        </div>
+        <div class="about-image"><strong>About Image</strong>: <span></span></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
